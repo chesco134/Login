@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
                 ConnectivityManager connMgr = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
                 if (networkInfo != null && networkInfo.isConnected()) {
-                    LoginConnection lc = new LoginConnection(userString, pwString);
+                    LoginConnection lc = new LoginConnection(getApplicationContext(), userString, pwString);
                     lc.execute();
                 } else {
                     // display error
