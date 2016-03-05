@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffe870"
+    android:id="@+id/login_layout">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usuario"
+        android:layout_alignLeft="@+id/pw"
+        android:layout_alignStart="@+id/pw"
+        android:layout_alignRight="@+id/pw"
+        android:layout_alignEnd="@+id/pw"
+        android:hint="Correo electrónico"
+        android:inputType="text"
+        android:focusable="true"
+        android:layout_marginTop="130dp"
+        android:textColor="#ff553300">
+    <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/usuario"
+        android:id="@+id/pw"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Contraseña"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff553300"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:id="@+id/iniciar"
+        android:layout_below="@+id/pw"
+        android:layout_alignLeft="@+id/pw"
+        android:layout_alignStart="@+id/pw"
+        android:layout_marginTop="40dp"
+        android:layout_alignRight="@+id/pw"
+        android:layout_alignEnd="@+id/pw"
+        android:textColor="#ffffe870"
+        android:background="@drawable/button_states"
+        />
+</RelativeLayout>
